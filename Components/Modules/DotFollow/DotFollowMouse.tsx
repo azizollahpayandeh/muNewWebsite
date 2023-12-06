@@ -44,5 +44,4 @@ const DotFollowMouse: React.FC = () => {
       />
   );
 };
-
 export default DotFollowMouse;
