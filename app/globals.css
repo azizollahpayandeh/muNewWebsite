@@ -19,7 +19,7 @@ body{
 
 .text-stroke {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.2px white; /* Adjust the width and color as needed */
+    -webkit-text-stroke: 0.5px white; /* Adjust the width and color as needed */
   }
   
   

@@ -12,7 +12,7 @@ export default function MainSec() {
       <div className="lg:h-[90vh] h-[150vh]">
         <div className="flex justify-center w-28 lg:w-auto mx-auto text-center">
           <h1 className="xl:text-[118px] md:text-[80px] text-[60px]  mt-20 ">
-            <span className="text-stroke ">Azizollah Payandeh</span>
+            <span className="text-stroke bg-gradient-to-b from-red-500 via-blue-800 to-purple-800 text-transparent bg-clip-text ">Azizollah Payandeh</span>
           </h1>
         </div>
 
