@@ -6,7 +6,7 @@ import Pretitle from "@/Components/Modules/PreTitle/Pretitle";
 export default function WhatIDo() {
   return (
     <>
-      <div className="h-[88vh] lg:h-[70px] 2xl:h-[65vh] lg:mt-[150px] lg:flex lg:justify-between">
+      <div className="h-[88vh] lg:h-[42vw] 2xl:h-[65vh] lg:mt-[150px] lg:flex lg:justify-between">
         <div className="title ">
           <Pretitle pretitle="SERVICES" />
           <h1 className="text-[40px] lg:text-[50px] font-semibold">
