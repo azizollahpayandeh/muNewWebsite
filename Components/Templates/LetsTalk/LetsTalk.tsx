@@ -7,7 +7,7 @@ export default function LetsTalk() {
     <>
       <div
         className="all flex lg:flex-row flex-col lg:justify-between
-       h-[70vh] mb-[190px] lg:mb-[0px] "
+       h-[70vh] 2xl:h-[60vh] mb-[190px] lg:mb-[0px] "
       >
         <div className="title mb-[30px]">
           <Pretitle pretitle="SERVICES" />

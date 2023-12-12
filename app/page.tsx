@@ -10,6 +10,7 @@ import ClientSpeak from "@/Components/Templates/ClientSpeak/ClientSpeak";
 import Blogs from "@/Components/Templates/Blogs/Blogs";
 import LetsTalk from "@/Components/Templates/LetsTalk/LetsTalk";
 import Map from "@/Components/Templates/Map/Map";
+import LastWord from "@/Components/Templates/LastWorld/LastWord";
 
 export default function page() {
   return (
@@ -36,6 +37,7 @@ export default function page() {
         <div className="pr-[7.7vw] 2xl:pr-[10vw] 2xl:pl-[10vw] pl-[7.7vw]">
           <LetsTalk/>
           <Map/>
+          <LastWord/>
         </div>
 
       </div>
