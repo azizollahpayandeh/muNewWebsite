@@ -3,7 +3,8 @@ import React from "react";
 export default function ComponyLogo() {
   return (
     <>
-      <div className="flex justify-between gap-7 mt-[140px] lg:mt-[10px] mr-[20px]">
+      <div className="flex justify-between gap-7 pt-[140px] lg:pt-[80px] xl:pt-[20px] mr-[20px]">
+        
         <svg
           className="hover:scale-[1.1] hidden lg:block transition-all duration-300"
           xmlns="http://www.w3.org/2000/svg"

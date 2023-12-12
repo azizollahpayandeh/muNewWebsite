@@ -30,8 +30,7 @@ export default function ClientSpeak() {
 
 
           </Swiper>
-        <hr className="shadow-[0px_1px_5px_2px_rgb(165,9,251)] h-[0.5px] lg:w-[75%] lg:ml-[260px] mt-[10px]"/>
-
+        <hr className="shadow-[0px_1px_5px_2px_rgb(165,9,251)] h-[0.5px] lg:w-[75%] xl:ml-[260px] lg:ml-[200px] mt-[10px]"/>
         </div>
     </>
   )

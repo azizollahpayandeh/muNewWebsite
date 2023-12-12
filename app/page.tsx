@@ -8,28 +8,36 @@ import RescentWork from "@/Components/Templates/RecentWork/RescentWork";
 import Award from "@/Components/Templates/Award/Award";
 import ClientSpeak from "@/Components/Templates/ClientSpeak/ClientSpeak";
 import Blogs from "@/Components/Templates/Blogs/Blogs";
+import LetsTalk from "@/Components/Templates/LetsTalk/LetsTalk";
+import Map from "@/Components/Templates/Map/Map";
 
 export default function page() {
   return (
     <>
       <div>
         <NavBar />
-        <div className="pr-[7.7vw] pl-[7.7vw]">
+        <div className="pr-[7.7vw] 2xl:pr-[10vw] 2xl:pl-[10vw] pl-[7.7vw]">
           <MainSec />
           <WhatIDo />
           <ComponyLogo />
         </div>
         <div
-          className="pl-[3vw] pr-[3vw]">
+          className="pl-[3vw] 2xl:pl-[5vw] 2xl:pr-[5vw] pr-[3vw]">
           <RescentWork />
         </div>
-        <div className="pr-[7.7vw] pl-[7.7vw]">
+        <div className="pr-[7.7vw] 2xl:pr-[10vw] 2xl:pl-[10vw] pl-[7.7vw]">
           <Award/>
           <ClientSpeak/>
         </div>
-        <div className="pl-[3vw] pr-[3vw]">
+        <div className="pl-[3vw] 2xl:pl-[5vw] 2xl:pr-[5vw] pr-[3vw]">
           <Blogs />
         </div>
+
+        <div className="pr-[7.7vw] 2xl:pr-[10vw] 2xl:pl-[10vw] pl-[7.7vw]">
+          <LetsTalk/>
+          <Map/>
+        </div>
+
       </div>
     </>
   );

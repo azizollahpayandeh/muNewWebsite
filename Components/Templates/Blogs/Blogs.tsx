@@ -17,7 +17,7 @@ import "swiper/css/scrollbar";
 export default function Blogs() {
   return (
     <>
-      <div className="bg-[#1d2024] rounded-2xl mt-[100px] mb-[100px] lg:h-[125vh] h-[100vh] 2xl:h-[95vh]">
+      <div className="bg-[#1d2024] rounded-2xl mt-[100px] mb-[120px] ">
         <div className="flex flex-col justify-center items-center ">
           <div className="textTop lg:w-[51vw] w-[84vw] pl-[20px] pt-[80px]">
             <div>
@@ -49,7 +49,7 @@ export default function Blogs() {
           </div>
         </div>
 
-        <div className="swiper w-[90%] lg:mt-[100px] mt-[40px] flex justify-center">
+        <div className="swiper w-[90%] lg:mt-[100px] mt-[40px] mb-[100px] flex justify-center">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}

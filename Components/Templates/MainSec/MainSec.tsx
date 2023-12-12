@@ -9,11 +9,12 @@ import Social from "@/Components/Modules/Sociall/Social";
 export default function MainSec() {
   return (
     <>
-      <div className="lg:h-[90vh] h-[150vh]">
-        <div className="flex justify-center w-28 lg:w-auto mx-auto text-center">
-          <h1 className="xl:text-[118px] md:text-[80px] text-[60px]  mt-20 ">
-            <span className="text-stroke bg-gradient-to-b from-red-500 via-blue-800 to-purple-800 text-transparent bg-clip-text ">Azizollah Payandeh</span>
-          </h1>
+      <div className="lg:h-[90vh] h-[140vh]">
+        <div className="flex justify-center text-center">
+          {/* <h1 className="xl:text-[118px] md:text-[80px] text-[60px]  mt-20 ">
+            <span className="text-stroke bg-clip-text ">Azizollah Payandeh</span>
+          </h1> */}
+          <Image src="/Images/maintitle.png" width={900} height={600} alt="Main Sec" className="pt-[50px] pb-[50px]" />
         </div>
 
         <div className=" lg:hidden pt-[50px]">
@@ -23,6 +24,7 @@ export default function MainSec() {
             alt="profile"
             src="/Images/prof.jpg"
             className="rounded-full mx-auto "
+            
           />
         </div>
 
@@ -35,12 +37,11 @@ export default function MainSec() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
             </div>
-            <div className="flex lg:flex-col gap-10 ">
-              <div className="skils w-[170px] flex flex-col ">
+            <div className="flex lg:flex-col gap-6">
+              <div className="skils w-auto flex flex-col ">
                 <h4 className="font-[500] text-[16px]">SKILLS</h4>
                 <p className="text-[#c3c1c1]  text-[15px] mt-[5px] leading-7">
-                  Web Development & UI & UX Design & Marketing & SEO &
-                  Management
+                  Web Development & UI & UX Design 
                 </p>
               </div>
 
@@ -79,7 +80,7 @@ export default function MainSec() {
               className="rounded-full lg:ml-[-50px] xl:ml-[-180px]"
             />
           </div>
-          <div className="flex justify-around  lg:flex-col gap-6 pt-10 mr-[20px] ">
+          <div className="flex justify-around  lg:flex-col gap-3 pt-10 mr-[20px] ">
             <div className="flex flex-col lg:text-right text-left">
               <h4 className="text-[16px] font-[500]">PROJECTS DONE</h4>
               <span className="text-[35px] lg:text-[50px] mt-[-3px] ">432</span>

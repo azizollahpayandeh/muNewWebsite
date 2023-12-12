@@ -5,7 +5,7 @@ import React from "react";
 export default function Award() {
   return (
     <>
-      <div className="lg:flex lg:justify-between lg:h-[55vh]">
+      <div className="xl:flex xl:justify-between xl:h-[55vh]">
 
         <div className="leftText">
           <div>
@@ -21,7 +21,7 @@ export default function Award() {
           </div>
         </div>
 
-        <div className="awardCards flex gap-5 lg:w-[80%] flex-wrap justify-end mt-[40px] lg:mt-[0px]">
+        <div className="awardCards flex gap-5 xl:w-[80%] flex-wrap justify-end mt-[40px] lg:mt-[0px]">
             <AwardCards/>
             <AwardCards/>
             <AwardCards/>
