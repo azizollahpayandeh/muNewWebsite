@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Link from "next/link";
 
 export default function Blogs() {
   return (
@@ -75,19 +76,27 @@ export default function Blogs() {
             loop={true}
           >
             <SwiperSlide>
+              <Link href={`Portfolio/VISUAL ART`}>
               <Cards imgsrc="/Images/blog-1.webp" firstlist="VISUAL ART" secondlist="SISUAL ART" thirdlist="CONCEPT" button="Fold Twist Abstract"/>
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
+              <Link href={`Portfolio/3D MODELING`}>
               <Cards imgsrc="/Images/blog-2.webp" firstlist="3D MODELING" secondlist="SPECAIL ART" thirdlist="CONCEPT" button="Colors of Circle"/>
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
+              <Link href={`Portfolio/3D MODELING`}>
               <Cards imgsrc="/Images/blog-3.webp" firstlist="3D MODELING" secondlist="SPECAIL ART" thirdlist="CONCEPT" button="Fold Twist Abstract"/>
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Cards imgsrc="/Images/blog-4.webp" firstlist="3D MODELING" secondlist="SISUAL ART" thirdlist="CONCEPT" button="Colors of Circle"/>
+              <Link href={`Portfolio/VISUAL ART`}>
+              <Cards imgsrc="/Images/blog-4.webp" firstlist="VISUAL ART" secondlist="SISUAL ART" thirdlist="CONCEPT" button="Colors of Circle"/>
+              </Link>
             </SwiperSlide>
           </Swiper>
         </div>
