@@ -17,7 +17,7 @@ import "swiper/css/scrollbar";
 export default function RescentWork() {
   return (
     <>
-      <div className="bg-[#1d2024] rounded-2xl mt-[100px] mb-[100px]  md:h-[105vh] lg:h-[110vh] h-[90vh] 2xl:h-[105vh]">
+      <div className="bg-[#1d2024] rounded-2xl mt-[100px] mb-[100px] h-auto">
         <div className="flex flex-col justify-center items-center ">
           <div className="textTop lg:w-[51vw] w-[84vw] pl-[20px] pt-[80px]">
             <div>

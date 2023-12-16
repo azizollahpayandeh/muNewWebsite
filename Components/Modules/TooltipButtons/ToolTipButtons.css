@@ -11,7 +11,7 @@
     background: var(--button-color);
     position: relative;
     text-align: center;
-    font-family: "Arial";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: background 0.7s;
     border-radius: 18px;
 

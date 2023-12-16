@@ -16,7 +16,6 @@ export default function page() {
   return (
     <>
       <div>
-        <NavBar />
         <div className="pr-[7.7vw] 2xl:pr-[10vw] 2xl:pl-[10vw] pl-[7.7vw]">
           <MainSec />
           <WhatIDo />

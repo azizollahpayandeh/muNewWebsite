@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import DotFollowMouse from "@/Components/Modules/DotFollow/DotFollowMouse";
 import "./globals.css";
+import NavBar from "@/Components/Templates/NavBar/NavBar";
 
 const Sans = Open_Sans({ subsets: ["latin"], weight: "400" });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={Sans.className}>
+      <NavBar />
         {children}
       </body>
     </html>
