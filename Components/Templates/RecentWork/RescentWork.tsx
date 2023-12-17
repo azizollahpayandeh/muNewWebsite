@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Link from "next/link";
 
 export default function RescentWork() {
   return (
@@ -49,7 +50,7 @@ export default function RescentWork() {
           </div>
         </div>
 
-        <div className="swiper w-[90%] lg:mt-[100px] mt-[40px] flex justify-center">
+        <div className="swiper w-[90%]  md:h-[520px] 2xl:h-[450px] lg:mt-[100px] mt-[40px]  flex justify-center">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
@@ -71,23 +72,54 @@ export default function RescentWork() {
                 slidesPerView: 1,
               },
             }}
-            
             loop={true}
           >
             <SwiperSlide>
-              <Cards imgsrc="/Images/portfolio-1.webp" firstlist="VISUAL ART" secondlist="SISUAL ART" thirdlist="CONCEPT" button="Fold Twist Abstract"/>
+              <Link href="/Portfolio/fold-twist-abstract">
+                <Cards
+                  imgsrc="/Images/portfolio-1.webp"
+                  firstlist="VISUAL ART"
+                  secondlist="SISUAL ART"
+                  thirdlist="CONCEPT"
+                  button="Fold Twist Abstract"
+                />
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Cards imgsrc="/Images/portfolio-2.webp" firstlist="3D MODELING" secondlist="SPECAIL ART" thirdlist="CONCEPT" button="Colors of Circle"/>
+              <Link href="/Portfolio/colors-of-circle">
+                <Cards
+                  imgsrc="/Images/portfolio-2.webp"
+                  firstlist="3D MODELING"
+                  secondlist="SPECAIL ART"
+                  thirdlist="CONCEPT"
+                  button="Colors of Circle"
+                />
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Cards imgsrc="/Images/portfolio-3.webp" firstlist="3D MODELING" secondlist="SPECAIL ART" thirdlist="CONCEPT" button="Fold Twist Abstract"/>
+              <Link href="/Portfolio/fold-twist-abstrac">
+                <Cards
+                  imgsrc="/Images/portfolio-3.webp"
+                  firstlist="3D MODELING"
+                  secondlist="SPECAIL ART"
+                  thirdlist="CONCEPT"
+                  button="Fold Twist Abstract"
+                />
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Cards imgsrc="/Images/portfolio-4.webp" firstlist="3D MODELING" secondlist="SISUAL ART" thirdlist="CONCEPT" button="Colors of Circle"/>
+              <Link href="/Portfolio/colors-of-circle">
+                <Cards
+                  imgsrc="/Images/portfolio-4.webp"
+                  firstlist="3D MODELING"
+                  secondlist="SISUAL ART"
+                  thirdlist="CONCEPT"
+                  button="Colors of Circle"
+                />
+              </Link>
             </SwiperSlide>
           </Swiper>
         </div>

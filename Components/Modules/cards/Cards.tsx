@@ -49,7 +49,7 @@ export default function Cards({
             </li>
           </ul>
           <div>
-            <h1 className="lg:text-[35px] "> {button}</h1>
+            <h1 className="lg:text-[32px] "> {button}</h1>
           </div>
         </div>
       </div>

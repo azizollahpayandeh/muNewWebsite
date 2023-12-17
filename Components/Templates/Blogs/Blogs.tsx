@@ -27,7 +27,7 @@ export default function Blogs() {
 
             <div className="">
               <h1 className="text-[40px] lg:text-[55px] font-semibold">
-               Blog
+                Blog
                 <span className="bg-gradient-to-b from-rose-500 via-indigo-500 to-purple-800 text-transparent bg-clip-text">
                   Posts
                 </span>
@@ -50,7 +50,7 @@ export default function Blogs() {
           </div>
         </div>
 
-        <div className="swiper w-[90%] lg:mt-[100px] mt-[40px]  flex justify-center">
+        <div className="swiper w-[90%]  md:h-[520px] 2xl:h-[450px] lg:mt-[100px] mt-[40px]  flex justify-center">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
@@ -72,30 +72,53 @@ export default function Blogs() {
                 slidesPerView: 1,
               },
             }}
-            
             loop={true}
           >
             <SwiperSlide>
-              <Link href={`Portfolio/VISUAL ART`}>
-              <Cards imgsrc="/Images/blog-1.webp" firstlist="VISUAL ART" secondlist="SISUAL ART" thirdlist="CONCEPT" button="Fold Twist Abstract"/>
+              <Link href={`Blogs/how-i-come-up-with-new-ideas`}>
+                <Cards
+                  imgsrc="/Images/blog-1.webp"
+                  firstlist="VISUAL ART"
+                  secondlist="SISUAL ART"
+                  thirdlist="CONCEPT"
+                  button="How I Come Up New Ideas"
+                />
               </Link>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Link href={`Portfolio/3D MODELING`}>
-              <Cards imgsrc="/Images/blog-2.webp" firstlist="3D MODELING" secondlist="SPECAIL ART" thirdlist="CONCEPT" button="Colors of Circle"/>
+              <Link href={`Blogs/optimizing-work-enviroment`}>
+                <Cards
+                  imgsrc="/Images/blog-2.webp"
+                  firstlist="3D MODELING"
+                  secondlist="SPECAIL ART"
+                  thirdlist="CONCEPT"
+                  button="Optimizing Work Enviroment"
+                />
               </Link>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Link href={`Portfolio/3D MODELING`}>
-              <Cards imgsrc="/Images/blog-3.webp" firstlist="3D MODELING" secondlist="SPECAIL ART" thirdlist="CONCEPT" button="Fold Twist Abstract"/>
+              <Link href={`Blogs/the-art-of-coffee-making`}>
+                <Cards
+                  imgsrc="/Images/blog-3.webp"
+                  firstlist="3D MODELING"
+                  secondlist="SPECAIL ART"
+                  thirdlist="CONCEPT"
+                  button="The Art Of Coffee Making"
+                />
               </Link>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Link href={`Portfolio/VISUAL ART`}>
-              <Cards imgsrc="/Images/blog-4.webp" firstlist="VISUAL ART" secondlist="SISUAL ART" thirdlist="CONCEPT" button="Colors of Circle"/>
+              <Link href={`Blogs/visual-art-of-cubes`}>
+                <Cards
+                  imgsrc="/Images/blog-4.webp"
+                  firstlist="VISUAL ART"
+                  secondlist="SISUAL ART"
+                  thirdlist="CONCEPT"
+                  button="Visual Art Of Cubes"
+                />
               </Link>
             </SwiperSlide>
           </Swiper>
