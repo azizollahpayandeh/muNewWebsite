@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import DotFollowMouse from "@/Components/Modules/DotFollow/DotFollowMouse";
+// import DotFollowMouse from "@/Components/Modules/DotFollow/DotFollowMouse";
 import "./globals.css";
 import NavBar from "@/Components/Templates/NavBar/NavBar";
 

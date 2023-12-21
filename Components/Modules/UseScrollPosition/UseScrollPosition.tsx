@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 
-export const UseScrollPosition = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
+// export const UseScrollPosition = () => {
+//     const [scrollPosition, setScrollPosition] = useState(0);
 
-    useEffect(() => {
+//     useEffect(() => {
 
-        if (typeof window !== 'undefined') {
-            const updatePosition = () => {
-                setScrollPosition(window.scrollY);
-            };
+//         if (typeof window !== 'undefined') {
+//             const updatePosition = () => {
+//                 setScrollPosition(window.scrollY);
+//             };
 
-            window.addEventListener('scroll', updatePosition);
-            updatePosition(); 
-            return () => window.removeEventListener('scroll', updatePosition);
-        }
-    }, []);
+//             window.addEventListener('scroll', updatePosition);
+//             updatePosition(); 
+//             return () => window.removeEventListener('scroll', updatePosition);
+//         }
+//     }, []);
 
-    return typeof window !== 'undefined' ? scrollPosition : 0;
-};
+//     return typeof window !== 'undefined' ? scrollPosition : 0;
+// };

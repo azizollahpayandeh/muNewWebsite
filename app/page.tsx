@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "@/Components/Templates/NavBar/NavBar";
 import MainSec from "@/Components/Templates/MainSec/MainSec";
 import WhatIDo from "@/Components/Templates/WhatIDo/WhatIDo";
-import DotFollowMouse from "@/Components/Modules/DotFollow/DotFollowMouse";
+// import DotFollowMouse from "@/Components/Modules/DotFollow/DotFollowMouse";
 import ComponyLogo from "@/Components/Templates/ComponyLogo/ComponyLogo";
 import RescentWork from "@/Components/Templates/RecentWork/RescentWork";
 import Award from "@/Components/Templates/Award/Award";
