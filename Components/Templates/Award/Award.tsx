@@ -5,7 +5,7 @@ import React from "react";
 export default function Award() {
   return (
     <>
-      <div className="xl:flex xl:justify-between xl:h-[55vh]">
+      <div id="Awards" className="xl:flex xl:justify-between xl:h-[55vh]">
 
         <div className="leftText">
           <div>

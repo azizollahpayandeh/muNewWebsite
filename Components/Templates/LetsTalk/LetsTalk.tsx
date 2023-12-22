@@ -6,6 +6,7 @@ export default function LetsTalk() {
   return (
     <>
       <div
+      id="Contact"
         className="all flex lg:flex-row flex-col lg:justify-between
        h-[70vh] 2xl:h-[60vh] mb-[190px] lg:mb-[0px] "
       >

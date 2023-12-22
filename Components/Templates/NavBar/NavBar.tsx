@@ -4,9 +4,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { UseScrollPosition } from "@/Components/Modules/UseScrollPosition/UseScrollPosition";
 import Menu from "@/Components/Modules/Menu/Menu";
 import Image from "next/image";
+import { Link } from "next-scroll";
 
-interface NavBarProps {
-  
+ interface NavBarProps {
+
 }
 
 const NavBar: React.FC<NavBarProps> = () => {
@@ -24,12 +25,12 @@ const NavBar: React.FC<NavBarProps> = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("click", handleDocumentClick);
+    document.addEventListener("click", handleDocumentClick)
 
     return () => {
       document.removeEventListener("click", handleDocumentClick);
     };
-  }, [clickHandlerMenu]);
+  }, [clickHandlerMenu])
 
   const menuRef = useRef<HTMLDivElement | null>(null);
 
@@ -45,20 +46,22 @@ const NavBar: React.FC<NavBarProps> = () => {
             <Image alt="Logo" src="/Images/logo3.png" width={70} height={70} />
           </div>
           <div className="flex md:gap-5 gap-2 pr-[3vw] ">
+          <Link to="Contact" offset={100} duration={700}>
             <ToolTipButtons
               firstValue="Let`s Talk"
               secondValue="Let`s Talk"
               bgstyle="bg-[#212529]"
               textcolor="text-[#ffff]"
-            />
-            <p onClick={toggleMenu}>
+              />
+              </Link>
+            <span onClick={toggleMenu}>
               <ToolTipButtons
                 firstValue="Menu"
                 secondValue="Menu"
                 bgstyle="bg-[#fff]"
                 textcolor="text-black"
               />
-            </p>
+            </span>
           </div>
         </div>
         <div className={`menu flex justify-end pr-[78px] ${clickHandlerMenu ? "block" : "hidden"}`} ref={menuRef}>
