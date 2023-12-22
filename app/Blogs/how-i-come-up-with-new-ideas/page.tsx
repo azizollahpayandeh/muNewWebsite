@@ -16,7 +16,7 @@ export default function page() {
                   Ideas
                 </span>
               </h1>
-              <p className="text-gray-400 lg:w-[800px] text-[14px] md:text-[16px] w-[]">
+              <p className="text-gray-400 lg:w-[800px] text-[14px] md:text-[16px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -34,10 +34,10 @@ export default function page() {
           </div>
         </div>
 
-        <div className="pl-[3vw] 2xl:pl-[5vw] 2xl:pr-[5vw] pr-[3vw] mt-[100px]">
+         <div className="pl-[3vw] 2xl:pl-[5vw] 2xl:pr-[5vw] pr-[3vw] mt-[100px]">
           <div className="anotherblog bg-[#151516] w-full mb-[10px] rounded-2xl ">
             <div className="flex justify-center">
-              <p className="text-[14px] opacity-70 md:w-[50%] pt-[80px] ">
+              <p className="text-[14px] opacity-70 w-[90%] md:w-[70%] pt-[80px] ">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -45,30 +45,33 @@ export default function page() {
               </p>
             </div>
 
+            <div className="w-[80%] flex flex-col justify-center items-center mx-auto">
+
             <Image
               alt=""
               src="/Images/blog-1.webp"
               width={1000}
               height={400}
-              className="mx-auto rounded-lg pt-[50px] "
+              className="mx-auto rounded-lg w-full pt-[50px] hidden md:block hover:opacity-70  "
             />
-            <div className="flex justify-center gap-10 pt-10">
+            <div className="flex justify-center gap-10 flex-col md:flex-row  pt-10">
               <Image
                 alt=""
                 src="/Images/blog-2.webp"
-                width={480}
+                width={482}
                 height={480}
-                className="rounded-lg "
+                className="rounded-lg md:w-[36vw] mx-auto  hover:opacity-70 w-[90%] "
               />
               <Image
                 alt=""
                 src="/Images/blog-3.webp"
-                width={480}
+                width={482}
                 height={480}
-                className="rounded-lg "
+                className="rounded-lg md:w-[36vw]  mx-auto hover:opacity-70 w-[90%] "
               />
+              </div>
             </div>
-            <div className="flex justify-around gap-44 mt-[40px] pb-[50px]">
+            <div className="flex justify-between w-[80%] mx-auto  mt-[40px] pb-[50px]">
               <ToolTipButtons
                 firstValue="PREV PROJECT"
                 secondValue="PREV PROJECT"

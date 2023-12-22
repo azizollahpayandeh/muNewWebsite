@@ -37,15 +37,15 @@ const NavBar: React.FC<NavBarProps> = () => {
   return (
     <>
       <div
-        className={`w-full top-0 z-50 transition-shadow sticky h-[100px] text-white  ${
+        className={`w-full top-0 z-50 transition-shadow sticky md:h-[100px] h-[80px] text-white  ${
           scrollPosition > 0 ? " bg-opacity-95 bg-[#151516]" : "shadow-none"
         }  `}
       >
-        <div className=" pt-[15px] items-center gap-2 flex justify-between ">
-          <div className="pl-[3vw]">
+        <div className=" pt-[15px] items-center gap-2 flex md:justify-between justify-center ">
+          <div className="pl-[3vw] hidden md:block">
             <Image alt="Logo" src="/Images/logo3.png" width={70} height={70} />
           </div>
-          <div className="flex md:gap-5 gap-2 pr-[3vw] ">
+          <div className="flex md:gap-5 justify-around  gap-2 pr-[3vw] ">
           <Link to="Contact" offset={100} duration={700}>
             <ToolTipButtons
               firstValue="Let`s Talk"
@@ -64,7 +64,7 @@ const NavBar: React.FC<NavBarProps> = () => {
             </span>
           </div>
         </div>
-        <div className={`menu flex justify-end pr-[78px] ${clickHandlerMenu ? "block" : "hidden"}`} ref={menuRef}>
+        <div className={`menu flex justify-end md:pr-[78px] pr-[50px] pt-[10px] md:pt-[0px] ${clickHandlerMenu ? "block" : "hidden"}`} ref={menuRef}>
           <Menu />
         </div>
       </div>

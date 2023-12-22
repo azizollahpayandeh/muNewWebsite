@@ -1,13 +1,31 @@
-import React, { useState } from "react";
-import { Link } from "next-scroll";
+import React, { useEffect, useState, useRef } from 'react';
+import { Link } from 'next-scroll';
 
 export default function Menu() {
-  const [clickHandler, setClickHandler] = useState("none");
+  const [clickHandler, setClickHandler] = useState('none');
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleDocumentClick = (event: MouseEvent) => {
+      // بررسی می‌کنیم که آیا کلیک بیرون از باکس صورت گرفته.
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setClickHandler('none');
+      }
+    };
+
+    // اضافه کردن event listener.
+    document.addEventListener('mousedown', handleDocumentClick);
+
+    // حذف event listener هنگامی که کمپوننت از DOM حذف شده یا ری‌رندر می‌شود.
+    return () => {
+      document.removeEventListener('mousedown', handleDocumentClick);
+    };
+  }, []); // وابستگی‌ها را خالی رها می‌کنیم زیرا مقدار آنها تغییر نخواهد کرد.
 
   return (
     <>
       <div>
-        <div className="w-[220px] h-[250px] bg-opacity-50 rounded-2xl bg-gradient-to-r from-[rgb(165,9,251)] to-blue-500  ">
+        <div className="w-[220px] h-[250px] bg-opacity-50 rounded-2xl bg-gradient-to-r from-[rgb(165,9,251)] to-blue-500  " ref={menuRef}>
           <ul className="pt-[20px] pl-[20px] flex flex-col gap-1">
             <Link to="About" offset={100} duration={700}>
               <li

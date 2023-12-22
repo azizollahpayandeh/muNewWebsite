@@ -9,7 +9,7 @@ import Social from "@/Components/Modules/Sociall/Social";
 export default function MainSec() {
   return (
     <>
-      <div id="About" className="lg:h-[90vh] h-[140vh]">
+      <div id="About" className=" h-[105vh] lg:h-[90vh]">
         <div className="flex justify-center text-center">
           {/* <h1 className="xl:text-[118px] md:text-[80px] text-[60px]  mt-20 ">
             <span className="text-stroke bg-clip-text ">Azizollah Payandeh</span>
@@ -47,7 +47,7 @@ export default function MainSec() {
 
               <div className="conect flex flex-col">
                 <h1>CONNECT</h1>
-                <div className="flex gap-2 mt-[5px]">
+                <div className="flex  mt-[5px]">
                   <Social
                     icone={
                       <FaTwitter className="lg:p-4 p-3 md:p-3 rounded-full bg-[#212529] cursor-pointer " />
@@ -80,19 +80,19 @@ export default function MainSec() {
               className="rounded-full lg:ml-[-50px] xl:ml-[-180px]"
             />
           </div>
-          <div className="flex justify-around  lg:flex-col gap-3 pt-10 mr-[20px] ">
+          <div className="flex justify-around  lg:flex-col gap-3 pt-10 lg:mr-[20px] ">
             <div className="flex flex-col lg:text-right text-left">
-              <h4 className="text-[16px] font-[500]">PROJECTS DONE</h4>
+              <h4 className="text-[16px] font-[500]">PROJECTS <span className="hidden md:block">DONE</span></h4>
               <span className="text-[35px] lg:text-[50px] mt-[-3px] ">432</span>
             </div>
 
             <div className="flex flex-col text-right">
-              <h4 className="text-[16px] font-[500]">YEARS OF EXPERIENCE</h4>
+              <h4 className="text-[16px] font-[500]"><span className="hidden md:block">YEARS OF</span> EXPERIENCE</h4>
               <span className="text-[35px] lg:text-[50px] mt-[-3px] ">13+</span>
             </div>
 
             <div className="flex flex-col text-right">
-              <h4 className="text-[16px] font-[500]">WORLDWIDE CLIENTS</h4>
+              <h4 className="text-[16px] font-[500]"><span className="hidden md:block">WORLDWIDE</span> CLIENTS</h4>
               <span className="text-[35px] lg:text-[50px] mt-[-3px] ">900</span>
             </div>
           </div>
