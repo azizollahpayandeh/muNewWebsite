@@ -7,20 +7,17 @@ export default function Menu() {
 
   useEffect(() => {
     const handleDocumentClick = (event: MouseEvent) => {
-      // بررسی می‌کنیم که آیا کلیک بیرون از باکس صورت گرفته.
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setClickHandler('none');
       }
     };
 
-    // اضافه کردن event listener.
     document.addEventListener('mousedown', handleDocumentClick);
 
-    // حذف event listener هنگامی که کمپوننت از DOM حذف شده یا ری‌رندر می‌شود.
     return () => {
       document.removeEventListener('mousedown', handleDocumentClick);
     };
-  }, []); // وابستگی‌ها را خالی رها می‌کنیم زیرا مقدار آنها تغییر نخواهد کرد.
+  }, [])
 
   return (
     <>

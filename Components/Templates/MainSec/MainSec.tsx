@@ -9,7 +9,7 @@ import Social from "@/Components/Modules/Sociall/Social";
 export default function MainSec() {
   return (
     <>
-      <div id="About" className=" h-[105vh] lg:h-[90vh]">
+      <div id="About" className="h-[135vh] md:h-[140vh] lg:h-[110vh] 2xl:h-[90vh]">
         <div className="flex justify-center text-center">
           {/* <h1 className="xl:text-[118px] md:text-[80px] text-[60px]  mt-20 ">
             <span className="text-stroke bg-clip-text ">Azizollah Payandeh</span>
