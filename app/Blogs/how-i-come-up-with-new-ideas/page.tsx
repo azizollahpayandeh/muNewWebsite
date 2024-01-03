@@ -2,6 +2,7 @@ import React from "react";
 import CardBP from "@/Components/Modules/CardBP/CardBP";
 import Image from "next/image";
 import ToolTipButtons from "@/Components/Modules/TooltipButtons/ToolTipButtons";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -72,18 +73,23 @@ export default function page() {
               </div>
             </div>
             <div className="flex justify-between w-[80%] mx-auto  mt-[40px] pb-[50px]">
+              <Link href="/Blogs/visual-art-of-cubes">
               <ToolTipButtons
                 firstValue="PREV PROJECT"
                 secondValue="PREV PROJECT"
                 bgstyle="bg-[#474747]"
                 textcolor="text-[#ffff]"
               />
+              </Link>
+              <Link href="/Blogs/optimizing-work-enviroment">
+                
               <ToolTipButtons
                 firstValue="NEXT PROJECT"
                 secondValue="NEXT PROJECT"
                 bgstyle="bg-[#474747]"
                 textcolor="text-[#ffff]"
-              />
+                />
+                </Link>
             </div>
           </div>
         </div>

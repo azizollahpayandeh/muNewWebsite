@@ -2,6 +2,7 @@ import React from "react";
 import CardBP from "@/Components/Modules/CardBP/CardBP";
 import Image from "next/image";
 import ToolTipButtons from "@/Components/Modules/TooltipButtons/ToolTipButtons";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -11,7 +12,7 @@ export default function page() {
           <div className="all flex justify-center">
             <div className="textFirst mt-[30px] lg:mt-[50px] ">
               <h1 className="text-[35px] md:text-[60px]">
-              The Art Of Coffe  
+                The Art Of Coffe
                 <span className="bg-gradient-to-b from-rose-500 via-indigo-500 to-purple-800 text-transparent bg-clip-text">
                   Making
                 </span>
@@ -34,7 +35,7 @@ export default function page() {
           </div>
         </div>
 
-    <div className="pl-[3vw] 2xl:pl-[5vw] 2xl:pr-[5vw] pr-[3vw] mt-[100px]">
+        <div className="pl-[3vw] 2xl:pl-[5vw] 2xl:pr-[5vw] pr-[3vw] mt-[100px]">
           <div className="anotherblog bg-[#151516] w-full mb-[10px] rounded-2xl ">
             <div className="flex justify-center">
               <p className="text-[14px] opacity-70 w-[90%] md:w-[70%] pt-[80px] ">
@@ -46,44 +47,47 @@ export default function page() {
             </div>
 
             <div className="w-[80%] flex flex-col justify-center items-center mx-auto">
-
-            <Image
-              alt=""
-              src="/Images/blog-1.webp"
-              width={1000}
-              height={400}
-              className="mx-auto rounded-lg w-full pt-[50px] hidden md:block hover:opacity-70  "
-            />
-            <div className="flex justify-center gap-10 flex-col md:flex-row  pt-10">
               <Image
                 alt=""
-                src="/Images/blog-2.webp"
-                width={482}
-                height={480}
-                className="rounded-lg md:w-[36vw] mx-auto  hover:opacity-70 w-[90%] "
+                src="/Images/blog-1.webp"
+                width={1000}
+                height={400}
+                className="mx-auto rounded-lg w-full pt-[50px] hidden md:block hover:opacity-70  "
               />
-              <Image
-                alt=""
-                src="/Images/blog-3.webp"
-                width={482}
-                height={480}
-                className="rounded-lg md:w-[36vw]  mx-auto hover:opacity-70 w-[90%] "
-              />
+              <div className="flex justify-center gap-10 flex-col md:flex-row  pt-10">
+                <Image
+                  alt=""
+                  src="/Images/blog-2.webp"
+                  width={482}
+                  height={480}
+                  className="rounded-lg md:w-[36vw] mx-auto  hover:opacity-70 w-[90%] "
+                />
+                <Image
+                  alt=""
+                  src="/Images/blog-3.webp"
+                  width={482}
+                  height={480}
+                  className="rounded-lg md:w-[36vw]  mx-auto hover:opacity-70 w-[90%] "
+                />
               </div>
             </div>
             <div className="flex justify-between w-[80%] mx-auto  mt-[40px] pb-[50px]">
-              <ToolTipButtons
-                firstValue="PREV PROJECT"
-                secondValue="PREV PROJECT"
-                bgstyle="bg-[#474747]"
-                textcolor="text-[#ffff]"
-              />
-              <ToolTipButtons
-                firstValue="NEXT PROJECT"
-                secondValue="NEXT PROJECT"
-                bgstyle="bg-[#474747]"
-                textcolor="text-[#ffff]"
-              />
+              <Link href="/Blogs/optimizing-work-enviroment">
+                <ToolTipButtons
+                  firstValue="PREV PROJECT"
+                  secondValue="PREV PROJECT"
+                  bgstyle="bg-[#474747]"
+                  textcolor="text-[#ffff]"
+                />
+              </Link>
+              <Link href="/Blogs/visual-art-of-cubes">
+                <ToolTipButtons
+                  firstValue="NEXT PROJECT"
+                  secondValue="NEXT PROJECT"
+                  bgstyle="bg-[#474747]"
+                  textcolor="text-[#ffff]"
+                />
+              </Link>
             </div>
           </div>
         </div>

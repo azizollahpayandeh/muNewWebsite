@@ -1,8 +1,9 @@
 "use client"
 import ToolTipButtons from "@/Components/Modules/TooltipButtons/ToolTipButtons";
 import React, { useEffect, useRef, useState } from "react";
-import { UseScrollPosition } from "@/Components/Modules/UseScrollPosition/UseScrollPosition";
+import { UseScrollPosition } from "@/Hooks/UseScrollPosition/UseScrollPosition";
 import Menu from "@/Components/Modules/Menu/Menu";
+import GoUpBtn from "@/Components/Modules/GoUpBtn/GoUpBtn";
 import Image from "next/image";
 import { Link } from "next-scroll";
 
@@ -41,7 +42,7 @@ const NavBar: React.FC<NavBarProps> = () => {
           scrollPosition > 0 ? " bg-opacity-95 bg-[#151516]" : "shadow-none"
         }  `}
       >
-        <div className=" pt-[15px] items-center gap-2 flex md:justify-between justify-center ">
+        <div className="  transition-all duration-500 pt-[15px] items-center gap-2 flex md:justify-between justify-center ">
           <div className="pl-[3vw] hidden md:block">
             <Image alt="Logo" src="/Images/logo3.png" width={70} height={70} />
           </div>
@@ -67,6 +68,7 @@ const NavBar: React.FC<NavBarProps> = () => {
         <div className={`menu flex justify-end md:pr-[78px] pr-[50px] pt-[10px] md:pt-[0px] ${clickHandlerMenu ? "block" : "hidden"}`} ref={menuRef}>
           <Menu />
         </div>
+
       </div>
     </>
   );

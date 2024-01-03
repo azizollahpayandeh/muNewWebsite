@@ -15,6 +15,7 @@ export const UseScrollPosition = () => {
             return () => window.removeEventListener('scroll', updatePosition);
         }
     }, []);
+    
 
     return typeof window !== 'undefined' ? scrollPosition : 0;
 };

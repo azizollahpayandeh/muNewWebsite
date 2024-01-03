@@ -11,11 +11,15 @@ import Blogs from "@/Components/Templates/Blogs/Blogs";
 import LetsTalk from "@/Components/Templates/LetsTalk/LetsTalk";
 import Map from "@/Components/Templates/Map/Map";
 import LastWord from "@/Components/Templates/LastWorld/LastWord";
+import GoUpBtn from "@/Components/Modules/GoUpBtn/GoUpBtn";
 
 export default function page() {
   return (
     <>
       <div>
+      <div className="  fixed bottom-[20px] left-0 cursor-pointer z-50 opacity-75 pl-[3vw] 2xl:pl-[5vw]">
+          <GoUpBtn/>
+        </div>
         <div className="pr-[7.7vw]  2xl:pr-[10vw] 2xl:pl-[10vw] pl-[7.7vw]">
           <MainSec />
           <WhatIDo />

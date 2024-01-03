@@ -2,6 +2,7 @@ import React from "react";
 import CardBP from "@/Components/Modules/CardBP/CardBP";
 import Image from "next/image";
 import ToolTipButtons from "@/Components/Modules/TooltipButtons/ToolTipButtons";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -46,44 +47,47 @@ export default function page() {
             </div>
 
             <div className="w-[80%] flex flex-col justify-center items-center mx-auto">
-
-            <Image
-              alt=""
-              src="/Images/blog-1.webp"
-              width={1000}
-              height={400}
-              className="mx-auto rounded-lg w-full pt-[50px] hidden md:block hover:opacity-70  "
-            />
-            <div className="flex justify-center gap-10 flex-col md:flex-row  pt-10">
               <Image
                 alt=""
-                src="/Images/blog-2.webp"
-                width={482}
-                height={480}
-                className="rounded-lg md:w-[36vw] mx-auto  hover:opacity-70 w-[90%] "
+                src="/Images/blog-1.webp"
+                width={1000}
+                height={400}
+                className="mx-auto rounded-lg w-full pt-[50px] hidden md:block hover:opacity-70  "
               />
-              <Image
-                alt=""
-                src="/Images/blog-3.webp"
-                width={482}
-                height={480}
-                className="rounded-lg md:w-[36vw]  mx-auto hover:opacity-70 w-[90%] "
-              />
+              <div className="flex justify-center gap-10 flex-col md:flex-row  pt-10">
+                <Image
+                  alt=""
+                  src="/Images/blog-2.webp"
+                  width={482}
+                  height={480}
+                  className="rounded-lg md:w-[36vw] mx-auto  hover:opacity-70 w-[90%] "
+                />
+                <Image
+                  alt=""
+                  src="/Images/blog-3.webp"
+                  width={482}
+                  height={480}
+                  className="rounded-lg md:w-[36vw]  mx-auto hover:opacity-70 w-[90%] "
+                />
               </div>
             </div>
             <div className="flex justify-between w-[80%] mx-auto  mt-[40px] pb-[50px]">
-              <ToolTipButtons
-                firstValue="PREV PROJECT"
-                secondValue="PREV PROJECT"
-                bgstyle="bg-[#474747]"
-                textcolor="text-[#ffff]"
-              />
-              <ToolTipButtons
-                firstValue="NEXT PROJECT"
-                secondValue="NEXT PROJECT"
-                bgstyle="bg-[#474747]"
-                textcolor="text-[#ffff]"
-              />
+              <Link href="/Portfolio/fold-twist-abstrac">
+                <ToolTipButtons
+                  firstValue="PREV PROJECT"
+                  secondValue="PREV PROJECT"
+                  bgstyle="bg-[#474747]"
+                  textcolor="text-[#ffff]"
+                />
+              </Link>
+              <Link href="/Portfolio/fold-twist-abstrac">
+                <ToolTipButtons
+                  firstValue="NEXT PROJECT"
+                  secondValue="NEXT PROJECT"
+                  bgstyle="bg-[#474747]"
+                  textcolor="text-[#ffff]"
+                />
+              </Link>
             </div>
           </div>
         </div>
