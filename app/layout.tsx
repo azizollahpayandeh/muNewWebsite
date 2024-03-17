@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 // import DotFollowMouse from "@/Components/Modules/DotFollow/DotFollowMouse";
 import "./globals.css";
 import NavBar from "@/Components/Templates/NavBar/NavBar";
+import GoUpBtn from "@/Components/Modules/GoUpBtn/GoUpBtn";
 
 const Sans = Open_Sans({ subsets: ["latin"], weight: "400" });
 
@@ -21,6 +22,9 @@ export default function RootLayout({
       <body className={Sans.className}>
       <NavBar />
         {children}
+        <div className="  fixed bottom-[20px] left-0 cursor-pointer z-50 opacity-75 pl-[3vw] 2xl:pl-[5vw]">
+          <GoUpBtn/>
+        </div>
       </body>
     </html>
   );
