@@ -1,6 +1,5 @@
 import React from "react";
 import Services from "@/Components/Modules/ServiceBox/Services";
-import { FaRegCircle } from "react-icons/fa";
 import Pretitle from "@/Components/Modules/PreTitle/Pretitle";
 
 export default function WhatIDo() {

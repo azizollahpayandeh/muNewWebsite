@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { GoDotFill } from "react-icons/go";
 
 interface CardsProps {
